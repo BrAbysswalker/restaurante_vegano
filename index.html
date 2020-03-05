@@ -24,14 +24,13 @@
       body {
         background-image: url("img/fundo3.png");
         background-size: 100%;
-        /* fazer com que a imagem não repita no
-        plano de fundo ou seja, será exibida
-        apenas uma */
-        background-repeat: no-repeat;
-
+        
         /* vamos fixar a imagem ao plano de fundo para ela não 
         role junto com o texto.Essa ficará "travada" */
         background-attachment: fixed;
+      }
+      main div {
+        border-radius: 30px;
       }
     </style>
 
@@ -145,7 +144,7 @@
             >
           </p>
           <div id="home2">
-            <h3>Ingredientes das nossas comidas</h3>
+            <h3> Ingredientes das nossas comidas </h3>
             <p>
               <span
                 >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -177,6 +176,11 @@
                 src="img/chef2.png"
                 alt="chefs"
               />
+      <!-- Inicio do qr code -->
+    
+      <img src="https://www.codigos-qr.com/qr/php/qr_img.php?d=http%3A%2F%2F10.26.44.83%2Frestaurantevegano%2Findex.html&s=8&e=m" alt="Generador de Códigos QR Codes"/>
+   
+      <!-- fim do qr code -->
             </div>
         </div>
       </div>
@@ -219,5 +223,6 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+  
   </body>
 </html>

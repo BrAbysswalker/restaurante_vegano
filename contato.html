@@ -24,14 +24,14 @@
       body {
         background-image: url("img/fundo3.png");
         background-size: 100%;
-        /* fazer com que a imagem não repita no
-        plano de fundo ou seja, será exibida
-        apenas uma */
-        background-repeat: no-repeat;
+
 
         /* vamos fixar a imagem ao plano de fundo para ela não 
         role junto com o texto.Essa ficará "travada" */
         background-attachment: fixed;
+      }
+      main div {
+        border-radius: 30px;
       }
     </style>
   </head>
@@ -89,7 +89,102 @@
 
     <!-- ##### Início do Main ##### -->
     <main>
-      <div class="container-fluid"></div>
+      <div class="container-fluid">
+        <h2>Faça contato conosco e deixe sua Observação</h2>
+
+        <!-- ########## Início do formulario de reserva -->
+
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label for="Nome">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Nome"
+                placeholder="Nome Completo"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="CPF">CPF</label>
+              <input
+                type="CPF"
+                class="form-control"
+                id="CPF"
+                placeholder="xxx.xxx.xxx-xx"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label for="Email">Email</label>
+              <input
+                type="Email"
+                class="form-control"
+                id="Email"
+                placeholder="email@dominio.com"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="Tel">Telefone</label>
+              <input
+                type="Telefone"
+                class="form-control"
+                id="Telefone"
+                placeholder="xxxx-xxxx"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Abaixo as informações sobre o contato -->
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="Mesas">Mesas</label>
+              <select id="Mesas" class="form-control">
+                <option selected>Selecione</option>
+                <option value="Mesa ao ar livre">Mesa ao ar livre</option>
+                <option value="Mesa com cadeiras acochoadas"
+                  >Mesa com cadeiras acochoadas</option
+                >
+                <option value="Mesa para uma familia"
+                  >Mesa para uma familia</option
+                >
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="CheckIn">Check-In</label>
+              <input type="date" class="form-control" id="Check-In" required />
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="NAdulto">Nº de Pessoas</label>
+              <input
+                type="number"
+                class="form-control"
+                id="NAdulto"
+                max="10"
+                min="1"
+                value="1"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Fim da informações sobre o contato-->
+
+          <div class="form-group">
+            <label for="Observacao">Observação</label>
+            <textarea class="form-control"></textarea>
+          </div>
+
+          <button type="submit" class="">Finalizar</button>
+        </form>
+      </div>
     </main>
     <!-- ##### Fim do Main ##### -->
 
@@ -115,19 +210,19 @@
       <!-- ###### Fim do Footer ######### -->
     </footer>
     <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
